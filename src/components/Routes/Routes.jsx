@@ -3,6 +3,7 @@ import MianLayoutes from "../Layoutes/MianLayoutes";
 import Home from "../pages/Home/Home";
 import Signin from "../pages/Signin/Signin";
 import SignUp from "../pages/SignUp/SignUp";
+import AddProducts from "../pages/AddProducts/AddProducts";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
           path: '/about',
         },
         {
-          path: '/profile',
+          path: '/products',
+          element: <AddProducts></AddProducts>
         },
         {
           path: '/gallery',
