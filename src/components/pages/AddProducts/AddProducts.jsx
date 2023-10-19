@@ -1,5 +1,5 @@
 import Navbar from "../../Shared/Navbar/Navbar";
-
+import Swal from 'sweetalert2'
 const AddProducts = () => {
     const handleAddProduct = e =>{
         e.preventDefault();
@@ -25,6 +25,14 @@ const AddProducts = () => {
         .then(res=> res.json())
         .then(data=>{
             console.log(data)
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Product add successfully',
+                    icon: 'success',
+                    confirmButtonText: 'ok'
+                  })
+            }
         }) 
     }
     return (
