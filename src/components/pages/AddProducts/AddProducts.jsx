@@ -71,6 +71,8 @@ const AddProducts = () => {
                                     <option>Laptop</option>
                                     <option>Headphone</option>
                                     <option>Processor</option>
+                                    <option>Fridge</option>
+                                    <option>Tv</option>
                             </select>
                         </label>
                     </div>

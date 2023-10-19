@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Signin from "../pages/Signin/Signin";
 import SignUp from "../pages/SignUp/SignUp";
 import AddProducts from "../pages/AddProducts/AddProducts";
+import BrandProducts from "../BrandProducts/BrandProducts";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,9 @@ const router = createBrowserRouter([
           element: <Home></Home>
         },
         {
-          path: '/details/:id',
+          path: '/brands/:name',
+          element: <BrandProducts></BrandProducts>,
+          loader: ()=> fetch('http://localhost:5000/products')
         },
         {
           path: '/about',
@@ -26,14 +29,14 @@ const router = createBrowserRouter([
           element: <AddProducts></AddProducts>
         },
         {
-          path: '/gallery',
+          path: '/',
         },
         {
-          path: '/login',
+          path: '/signin',
           element: <Signin></Signin>
         },
         {
-          path:'/register',
+          path:'/signup',
           element: <SignUp></SignUp>
         }
       ]
