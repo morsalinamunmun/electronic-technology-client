@@ -5,7 +5,7 @@ const Choose = () => {
     return (
         <div className='my-28 max-w-4xl mx-auto'>
             <h2 className="text-2xl font-bold text-blue-900 text-center mb-16">Why Choose Us</h2>
-            <div className="flex gap-10">
+            <div className="flex flex-col md:flex-row gap-10">
                 <div className='text-center'>
                     <GrMapLocation className='text-3xl flex mx-auto mb-3'></GrMapLocation>
                     <h3 className='font-semibold text-xl'>Our location</h3>

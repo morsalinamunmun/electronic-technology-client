@@ -2,31 +2,37 @@
     {
         "id": 1,
         "brand_img" : "https://i.ibb.co/Khf9Mt9/apple-3d.jpg",
-        "brand_name" : "Apple"
+        "brand_name" : "Apple",
+        "slider_img": "https://i.ibb.co/Khf9Mt9/apple-3d.jpg"
     },
     {
         "id": 2,
         "brand_img" : "https://i.ibb.co/L5XDzpD/samsung-logo.jpg",
-        "brand_name" : "Samsung"
+        "brand_name" : "Samsung",
+        "slider_img" : "https://i.ibb.co/L5XDzpD/samsung-logo.jpg"
     },
     {
         "id": 3,
         "brand_img" : "https://i.ibb.co/KyNpJs0/sony-logo-brand.jpg",
-        "brand_name" : "Sony"
+        "brand_name" : "Sony",
+        "slider_img" : "https://i.ibb.co/KyNpJs0/sony-logo-brand.jpg"
     },
     {
         "id": 4,
         "brand_img" : "https://i.ibb.co/NCtLpMC/g-google.jpg",
-        "brand_name" : "Google"
+        "brand_name" : "Google",
+        "slider_img" : "https://i.ibb.co/NCtLpMC/g-google.jpg"
     },
     {
         "id": 5,
         "brand_img" : "https://i.ibb.co/HHhgdnV/intel-logo.png",
-        "brand_name" : "Intel"
+        "brand_name" : "Intel",
+        "slider_img" : "https://i.ibb.co/HHhgdnV/intel-logo.png"
     },
     {
         "id": 6,
         "brand_img" : "https://i.ibb.co/P1tKX93/LG-Logo.jpg",
-        "brand_name" : "LG"
+        "brand_name" : "LG",
+        "slider_img" : "https://i.ibb.co/P1tKX93/LG-Logo.jpg"
     }
 ]

@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <MianLayoutes></MianLayoutes>,
-      errorElement: <ErrorPage></ErrorPage>,
+      //errorElement: <ErrorPage></ErrorPage>,
       children:[
         {
           path: '/',
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         {
           path: '/brands/:name',
           element: <BrandProducts></BrandProducts>,
-          loader: ()=> fetch('http://localhost:5000/products')
+          loader: ()=> fetch(`http://localhost:5000/products/${name}`)
         },
         {
           path: '/products',
