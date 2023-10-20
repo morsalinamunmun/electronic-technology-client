@@ -6,7 +6,7 @@ const Navbar = () => {
     <li><NavLink to='/' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>Home</NavLink></li>
     <li><NavLink to='/about' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>About Us</NavLink></li>
     <li><NavLink to='/products' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>Add Products</NavLink></li>
-    <li><NavLink to='/card' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>My Card</NavLink></li>
+    <li><NavLink to='/myCard' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>My Card</NavLink></li>
     <li><NavLink to='/gallery' className={({isActive, isPending})=> isPending ? "pending" : isActive ? "text-blue-500 border-r-2 border-blue-500 pr-2" : ""}>Gallery</NavLink></li>
 </>
     return (

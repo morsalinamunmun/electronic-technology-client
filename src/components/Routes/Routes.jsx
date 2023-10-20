@@ -5,12 +5,14 @@ import Signin from "../pages/Signin/Signin";
 import SignUp from "../pages/SignUp/SignUp";
 import AddProducts from "../pages/AddProducts/AddProducts";
 import BrandProducts from "../BrandProducts/BrandProducts";
+import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <MianLayoutes></MianLayoutes>,
-      //errorElement: <ErrorPage></ErrorPage>,
+      errorElement: <ErrorPage></ErrorPage>,
       children:[
         {
           path: '/',
@@ -29,7 +31,8 @@ const router = createBrowserRouter([
           element: <AddProducts></AddProducts>
         },
         {
-          path: '/',
+          path: '/myCard',
+          element: <PrivateRoutes></PrivateRoutes>
         },
         {
           path: '/signin',
