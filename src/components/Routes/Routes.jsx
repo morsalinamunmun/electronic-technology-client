@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <MianLayoutes></MianLayoutes>,
-      //errorElement: <ErrorPage></ErrorPage>,
+      errorElement: <ErrorPage></ErrorPage>,
       children:[
         {
           path: '/',
@@ -38,13 +38,13 @@ const router = createBrowserRouter([
         {
           path: '/updateProducts/:id',
           element: <UpdateProducts></UpdateProducts>,
-          loader: ({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
+          loader: ({params})=> fetch(`http://localhost:5000/product/${params.id}`)
           
         },
         {
           path: '/myCard',
           element: <PrivateRoutes><MyCard></MyCard></PrivateRoutes>,
-          loader: ()=> fetch('http://localhost:5000/cart')
+          loader: ()=> fetch('http://localhost:5000/myCart')
         },
         {
           path: '/signin',

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+
 
 const BrandProduct = ({brandProduct}) => {
     const { _id, image_url, name, product, rating, description, price} = brandProduct;
