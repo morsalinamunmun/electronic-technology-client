@@ -28,23 +28,23 @@ const router = createBrowserRouter([
         {
           path: '/brands/:name',
           element: <BrandProducts></BrandProducts>,
-          loader: ()=> fetch(`http://localhost:5000/products/${name}`)
+          loader: ()=> fetch(`https://electronics-technology-server.vercel.app/products/${name}`)
         },
         {
           path: '/details/:id',
           element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-          loader: ()=> fetch('http://localhost:5000/products')
+          loader: ()=> fetch('https://electronics-technology-server.vercel.app/products')
         },
         {
           path: '/updateProducts/:id',
           element: <UpdateProducts></UpdateProducts>,
-          loader: ({params})=> fetch(`http://localhost:5000/product/${params.id}`)
+          loader: ({params})=> fetch(`https://electronics-technology-server.vercel.app/product/${params.id}`)
           
         },
         {
           path: '/myCard',
           element: <PrivateRoutes><MyCard></MyCard></PrivateRoutes>,
-          loader: ()=> fetch('http://localhost:5000/myCart')
+          loader: ()=> fetch('https://electronics-technology-server.vercel.app/myCart')
         },
         {
           path: '/signin',

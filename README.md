@@ -7,7 +7,9 @@
 - Profile of select product user will be given, user can control delete update data
 
 
+## 🔗 Live link here
 
+🔗 [Live link](https://electronis-technology.web.app/)
 
 
 

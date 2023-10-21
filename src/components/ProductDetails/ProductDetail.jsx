@@ -8,7 +8,7 @@ const ProductDetail = ({productDetail}) => {
             _id, description, product, price, image_url
         }
         console.log()
-        fetch('http://localhost:5000/cart', {
+        fetch('https://electronics-technology-server.vercel.app/myCart', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

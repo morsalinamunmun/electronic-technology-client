@@ -12,7 +12,7 @@ const Brands = () => {
 
    /*  const handleBrand = () =>{
         console.log()
-        fetch(`http://localhost:5000/products/${name}`)
+        fetch(`https://electronics-technology-server.vercel.app/products/${name}`)
         .then(res=> res.json())
         .then(data=>{
             console.log(data)

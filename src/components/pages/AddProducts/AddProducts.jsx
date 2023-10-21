@@ -15,7 +15,7 @@ const AddProducts = () => {
         const productInfo = {name, product, type, rating, price, description, image_url}
         
         //send form data to server
-        fetch('http://localhost:5000/products', {
+        fetch('https://electronics-technology-server.vercel.app/products', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
