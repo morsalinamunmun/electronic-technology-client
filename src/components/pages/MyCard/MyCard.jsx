@@ -7,7 +7,7 @@ const MyCard = () => {
     return (
             <div className="">
                 <Navbar></Navbar>
-                <div className="grid grid-cols-2 gap-10 max-w-5xl mx-auto my-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto my-10">
                 {
                     carts.map(cart=> <Cart key={cart.id} cart={cart}></Cart>)
                 }
