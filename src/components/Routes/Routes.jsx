@@ -9,6 +9,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import ProductDetails from "../ProductDetails/ProductDetails";
 import UpdateProducts from "../UpdateProducts/UpdateProducts";
+import MyCard from "../pages/MyCard/MyCard";
 
 const router = createBrowserRouter([
     {
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/myCard',
-          element: <PrivateRoutes></PrivateRoutes>
+          element: <PrivateRoutes><MyCard></MyCard></PrivateRoutes>
         },
         {
           path: '/signin',

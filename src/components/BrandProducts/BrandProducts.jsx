@@ -3,6 +3,7 @@
 
 import { useLoaderData, useParams } from "react-router-dom";
 import BrandProduct from "./BrandProduct";
+import Navbar from "../Shared/Navbar/Navbar";
 
 const BrandProducts = () => {
     const products = useLoaderData()
@@ -14,6 +15,7 @@ const BrandProducts = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             {/* {
                 product.map(pro=>
                     <div key={pro.id} className="carousel w-full">
@@ -41,7 +43,7 @@ const BrandProducts = () => {
                 </div>
                 )
             } */}
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto my-10 gap-10">
                 {
                     product.map(brandProduct=> <BrandProduct key={brandProduct.id} brandProduct={brandProduct}></BrandProduct>)
                 }
