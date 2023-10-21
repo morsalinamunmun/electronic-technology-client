@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import ProductDetail from "./ProductDetail";
+import Navbar from "../Shared/Navbar/Navbar";
 
 const ProductDetails = () => {
     const products = useLoaderData();
@@ -10,6 +11,7 @@ const ProductDetails = () => {
     console.log(product)
     return (
         <div>
+            <Navbar></Navbar>
             {
                 product.map(productDetail=> <ProductDetail key={productDetail.id} productDetail={productDetail}></ProductDetail>)
             }

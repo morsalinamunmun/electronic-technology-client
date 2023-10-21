@@ -1,6 +1,33 @@
+import Swal from "sweetalert2";
 
 const ProductDetail = ({productDetail}) => {
-    const {description, product, price, image_url} = productDetail;
+    const {_id, description, product, price, image_url} = productDetail;
+
+    const handleSelectCart = () =>{
+        const productInfo ={
+            _id, description, product, price, image_url
+        }
+        console.log()
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(productInfo)
+        })
+        .then(res=> res.json())
+        .then(data=>{
+            console.log(data)
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Product add successfully',
+                    icon: 'success',
+                    confirmButtonText: 'ok'
+                  })
+            }
+        })
+    }
     return (
             <div className="flex mx-auto">
                 <div className="max-w-4xl mx-auto">
@@ -10,7 +37,7 @@ const ProductDetail = ({productDetail}) => {
                     <p className=""><span>Price: </span>{price}</p>
                 </div>
             <p>{description}</p>
-            <button className="my-5 text-white bg-red-500 px-3 py-2">Add to Cart</button>
+            <button onClick={handleSelectCart} className="my-5 text-white bg-red-500 px-3 py-2">Add to Cart</button>
         </div>
             </div>
     );

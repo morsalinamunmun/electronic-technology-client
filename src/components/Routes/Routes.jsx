@@ -43,7 +43,8 @@ const router = createBrowserRouter([
         },
         {
           path: '/myCard',
-          element: <PrivateRoutes><MyCard></MyCard></PrivateRoutes>
+          element: <PrivateRoutes><MyCard></MyCard></PrivateRoutes>,
+          loader: ()=> fetch('http://localhost:5000/cart')
         },
         {
           path: '/signin',
